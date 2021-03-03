@@ -1,10 +1,9 @@
 import pymongo
 from pymongo import MongoClient
 
-DATABASE_CLUSTER = MongoClient(
-    "mongodb://admin:G6HyJikC1wKwoz1c@main-cluster-shard-00-00.hukmn.mongodb.net:27017,main-cluster-shard-00-01.hukmn.mongodb.net:27017,main-cluster-shard-00-02.hukmn.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-rct4tj-shard-0&authSource=admin&retryWrites=true&w=majority")
+DATABASE_CLUSTER = MongoClient("Here goes the connection string of your database")
 
-DATABASE = DATABASE_CLUSTER["travmedia"]
+DATABASE = DATABASE_CLUSTER["test"]
 
 USERS_COLLECTION = DATABASE["users"]
 POST_COLLECTION = DATABASE["posts"]
